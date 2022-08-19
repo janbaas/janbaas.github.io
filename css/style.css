@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --black: black;
+    --white: white;
+    --photo-secondary: #828282;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+* {
+    font-family: 'Jost', Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+}
+
+
+h1, h2, h3, .menuItem {
+    font-family: "Futura Lt BT", Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.inlineLink {
+    text-decoration: underline;
+    color: black;
+}
+
+
+
+header {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 60vw;
+}
+
+.menuItem {
+    color: black;
+    display: block;
+}
+
+.siteTitle {
+    margin: 2vw;
+}
+
+
+
+
+.banner {
+    background-color: var(--black);
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+}
+
+.bannerText {
+    color: var(--black);
+    display: block;
+    margin: 0;
+    /* width: 100vw; */
+    text-align: center;
+}
+
+.bannerTitle {
+    color: var(--black);
+    
+}
+
+.bannerParagraph {
+    max-width: 980px;
+    margin-top: 5vh;
+}
+
+.bannerButton {
+    margin-top: 5vh;
+    border: 3px solid var(--black);
+    padding: 1vw 3vw 1vw 3vw;
+    transition: all .7s;
+}
+
+.bannerButton:hover {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.sectionParagraph {
+    max-width: 980px;
+    padding: 3vw;
+    margin: 0;
+    margin: auto;
+    font-weight: 200;
+    line-height: 1.8;
+}
+
+.halfWidth {
+    /* width: 43vw; */
+}
+
+.paragraphTitle {
+    font-weight: 400;
+    display: block;
+    margin-bottom: 2vh;
+}
+
+.aboutImage {
+    padding: 0;
+    margin-top: 3vw;
+    background-color: black;
+    width: 46vw;
+    object-fit: cover;
+}
+
+.vertical {
+    height: 60vw;
+}
+
+.horizontal {
+    height: 33.75vw;
+}
+
+.about {
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: auto;
+}
+
+
+.photoSection {
+    margin-top: 10vh;
+}
+
+.photoGrid {
+    max-width: 980px;
+    margin: 3vw;
+    margin: auto;
+    margin-top: .5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 33.75vw 20vw 33.75vw;
+    gap: 2vw;
+    grid-template-areas: 
+        "a b"
+        "a c"
+        "d c";
+}
+
+.photoFlex {
+    max-width: 980px;
+    margin: 3vw;
+    margin: auto;
+    margin-top: .5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "a b c";
+    gap: 1vw;
+}
+
+.column {
+    width: 100%;
+}
+
+.photo {
+    background-color: white;
+    width: 100%;
+    height:fit-content;
+    /* object-fit: cover; */
+    padding: .5vw 0 .5vw 0;
+}
+
+.a {grid-area: a; }
+.b {grid-area: b; }
+.c {grid-area: c; }
+.d {grid-area: d; }
+
+
+
+.contact {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+  
