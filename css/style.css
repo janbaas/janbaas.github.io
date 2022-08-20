@@ -3,12 +3,13 @@
 
 :root {
     --black: black;
-    --white: white;
+    --white: #fff8e6;
     --photo-secondary: #828282;
 }
 
 body {
     overflow-x: hidden;
+    background-color: var(--white);
 }
 
 * {
