@@ -187,7 +187,7 @@ header {
 }
 
 .photo {
-    background-color: white;
+    /* background-color: white; */
     /* width: 300px; */
     height:fit-content;
     /* object-fit: cover; */
